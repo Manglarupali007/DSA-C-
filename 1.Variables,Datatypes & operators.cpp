@@ -75,3 +75,79 @@ int main(){
 
 -------------------------------
 
+//OPERATORS 
+// 1. Arithmetic
+#include<iostream>
+using namespace std;
+int main(){
+    int a, b;
+    cin>>a;
+    cin>>b;
+    cout<<"sum: "<<(a+b)<<"\n";
+    cout<<"difference: "<<(a+b)<<"\n";
+    cout<<"product: "<<(a*b)<<"\n";
+    cout<<"division: "<<(a/b)<<"\n";
+    cout<<"modulus: "<<(a%b)<<"\n";
+    return 0;
+}
+
+-----
+
+// 2.Relational
+#include <iostream>
+using namespace std;
+int main()
+{
+    cout << (3 < 5) << "\n";  
+    cout << (3 > 5) << "\n";
+    cout << (3 <= 5) << "\n";
+    cout << (3 >= 5) << "\n";
+    cout << (3 == 5) << "\n";
+    cout << (3 != 5) << "\n";
+    return 0;
+}
+
+-----
+
+// 3.Logical
+#include <iostream>
+using namespace std;
+int main()
+{
+    cout << !(3 < 1) << "\n"; //NOT
+    cout << ((3 < 1) || (3 > 5)) << "\n"; //OR
+    cout << ((3 < 1) && (3 > 5)) << "\n"; //AND
+    return 0;
+}
+
+-------------------------------
+
+//Unary operators
+#include<iostream>
+using namespace std;
+int main(){
+    int a=25;
+    cout<<(a++)<<"\n";
+    cout<<(++a)<<"\n";
+    cout<<(a--)<<"\n";
+    cout<<(--a)<<"\n";
+    return 0;
+}
+
+-------------------------------
+
+📝 PRACTICE
+
+// 1.SUM OF TWO NUMBERS
+#include<iostream>
+using namespace std;
+int main(){
+    int a=10;
+    int b=15;
+    int sum=a+b;
+    cout<<sum;
+    return 0;
+}
+
+-------------------------------
+
