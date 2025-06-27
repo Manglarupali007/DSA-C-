@@ -1,1 +1,220 @@
-.
+//Conditional Statements
+// • if-else
+#include<iostream>
+using namespace std;
+int main(){
+int age=19;
+if(age>18){
+    cout<<"Yes";
+}
+else{
+    cout<<"No";
+}
+    return 0;
+}
+
+----------------------
+
+//CHECK EVEN OR ODD
+#include<iostream>
+using namespace std;
+int main(){
+    int a;
+    cin>>a;
+    if(a%2==0){
+        cout<<"Even";
+    }
+    else{
+        cout<<"Odd";
+    }
+}
+
+-----------------------
+
+// •if-else if-else
+#include<iostream>
+using namespace std;
+int main(){
+    int a;
+    cin>>a;
+    if(a>0){
+        cout<<"Positive";
+    }
+    else if(a==0){
+        cout<<"Zero";
+    }
+    else{
+        cout<<"Negative";
+    }
+}
+
+---------------------------
+
+//uppercase or lowercase
+#include<iostream>
+using namespace std;
+int main(){
+    char a;
+    cin>>a;
+    if(a>='a' && a<='z'){
+        cout<<"lowercase";
+    }
+    else{
+        cout<<"UPPERCASE";
+    }
+}
+
+-------------------------------
+
+//Ternary operator
+#include<iostream>
+using namespace std;
+int main()
+{
+   int a=45;
+   cout<< (a>=0 ? "Positive": "negative");
+    return 0;
+}
+
+-------------------------------
+          🌟LOOPS
+--------------------------------
+
+//While loop
+//while loop
+#include<iostream>
+using namespace std;
+int main(){
+    int a=1;
+    while(a<=10){
+        cout<<a<<"\n";
+        a++;
+    }
+    return 0;
+}
+
+-----------------------------
+
+//for loop
+#include<iostream>
+using namespace std;
+int main(){
+    for(int i=0;i<10;i++){
+        cout<<i<<"\n";
+    }
+    return 0;
+}
+
+----------------------------
+
+//Sum of numbers 1 to n
+//Sum of numbers 1 to n
+#include<iostream>
+using namespace std;
+int main(){
+    int n=8;
+    int sum=0;
+    for(int i=0;i<=n;i++){
+        sum+=i;
+    }
+    cout<<sum;
+    return 0;
+}
+
+----------------------------
+
+//break
+#include<iostream>
+using namespace std;
+int main(){
+    int n=8;
+    for(int i=0;i<=n;i++){
+        if(i==5){
+            break;
+        }
+        cout<<i<<"\n";
+    }
+    return 0;
+}
+
+--------------------------------
+
+//Continue
+#include<iostream>
+using namespace std;
+int main(){
+    int n=8;
+    for(int i=0;i<=n;i++){
+        if(i==5){
+            continue;
+        }
+        cout<<i<<"\n";
+    }
+    return 0;
+}
+-------------------------
+
+//do-while loop
+#include<iostream>
+using namespace std;
+int main(){
+    do{
+        cout<<"Hello";
+    }
+    while(3>5);
+    return 0;
+}
+
+--------------------------
+
+//PRIME OR NOT
+#include<iostream>
+using namespace std;
+int main(){
+    int n=7;
+    bool prime=true;
+    for(int i=2;i<n;i++){
+        if(n%i==0){
+            prime=false;
+            break;
+        }
+    }
+    if(prime==true){
+        cout<<"Prime";
+    }
+    else{
+        cout<<"Non-Prime";
+    }
+    return 0;
+}
+
+-----------------------------
+
+//Nested loops - loop inside loop
+#include<iostream>
+using namespace std;
+int main(){
+int x=5;
+for(int i=0;i<x;i++){
+    for(int j=0;j<x;j++){
+        cout<<"*";
+    }
+    cout<<"\n";
+}
+    return 0;
+}
+
+-----------------------------
+
+//factorial
+#include<iostream>
+using namespace std;
+int main(){
+    int n=5;
+    int fact=1;
+    for(int i=1;i<=n;i++){
+        fact*=i;
+    }
+    cout<<fact;
+    return 0;
+}
