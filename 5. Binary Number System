@@ -1,0 +1,46 @@
+// Decimal to Binary - (Not supported by VS Code)
+#include<iostream>
+using namespace std;
+
+int convert(int num){
+    int ans=0;
+    int pow=1;
+
+    while(num>0){
+      int rem=num%2;
+      num/=2;
+
+        ans+=(rem*pow);
+        pow*=10;
+    }
+    return ans;
+}
+int main(){
+    int num=50;
+cout<<convert(num);
+return 0;
+}
+
+-----------------------------
+
+//Binary to Decimal
+#include<iostream>
+using namespace std;
+int Convert(int n){
+    int ans=0;
+    int pow=1;
+    while(n>0){
+int rem=n%10;
+ans+=(rem*pow);
+n/=10;
+pow*=2;
+    }
+    return ans;
+}
+int main(){
+int num=101011;
+cout<<Convert(num);
+}
+
+------------------------------
+
