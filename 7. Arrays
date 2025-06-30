@@ -1,0 +1,98 @@
+// Array
+#include <iostream>
+using namespace std;
+int main()
+{
+    int arr[5] = {12, 34, 56, 78, 98};
+    arr[0] = 101;           // update element at 0th index
+    cout << arr[3] << "\n"; // Index
+    for (int i = 0; i < 5; i++)
+    { // loop on array
+        cout << arr[i] << " ";
+    }
+}
+
+-----------------------------
+
+// User input
+#include<iostream>
+using namespace std;
+int main(){
+    int arr[5];
+    for(int i=0;i<5;i++){
+        cin>>arr[i];
+    }
+    for(int i=0;i<5;i++){
+        cout<<arr[i]<<" ";
+    }
+}
+
+------------------------------------------
+
+// find largest
+#include<iostream>
+using namespace std;
+int main(){
+    int arr[5]={12,34,56,52,46};
+    int max=-1;
+    for(int i=0;i<5;i++){
+        if(arr[i]>max){
+            max=arr[i];
+        }
+    }
+    cout<<max;
+}
+
+-----------------------------------------
+
+// find smallest
+#include<iostream>
+using namespace std;
+int main(){
+    int arr[5]={12,34,56,52,46};
+    int min=INT8_MAX;
+    for(int i=0;i<5;i++){
+        if(arr[i]<min){
+            min=arr[i];
+        }
+    }
+    cout<<min;
+}
+
+----------------------------------------
+
+//Linear Search
+#include<iostream>
+using namespace std;
+int main(){
+    int arr[5]={45,67,23,90,35};
+    int target=90;
+    for(int i=0;i<5;i++){
+        if(arr[i]==target){
+            cout<<i;
+        }
+    }
+    return 0;
+}
+
+----------------------------------
+
+//Reverse an array
+#include<iostream>
+using namespace std;
+int main(){
+    int arr[5]={45,67,23,90,35};
+    int start=0;
+    int end=4;
+    while(start<end){
+        int temp=arr[start];
+        arr[start]=arr[end];
+        arr[end]=temp;
+        start++;
+        end--;
+    }
+    for(int i=0;i<5;i++){
+        cout<<arr[i]<<" ";
+    }
+    return 0;
+}
