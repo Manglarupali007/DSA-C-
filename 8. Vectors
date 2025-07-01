@@ -1,0 +1,48 @@
+//Vectors
+#include<iostream>
+#include<vector> //header file 
+using namespace std;
+int main(){
+    vector<int> vec={1,2,3};
+cout<<vec[0]; //index
+return 0; 
+}
+
+-----------------------------
+
+//loop
+#include<iostream>
+#include<vector> 
+using namespace std;
+int main(){
+    vector<int> vec={1,2,3};
+// for(int i=0;i<3;i++){
+//     cout<<vec[i]<<" ";
+// }
+
+// OR
+
+for(int i:vec){
+    cout<<i<<" ";
+}
+return 0; 
+}
+
+----------------------------
+
+//VECTOR FUNCTIONS
+#include<iostream>
+#include<vector>
+using namespace std;
+int main(){
+    vector<int> vec={1,3,5,7,9};
+    cout<<vec.size()<<"\n"; //Size of vector
+    vec.push_back(25); //append a num at end
+    cout<<vec.size()<<"\n"; //Size after pushback
+    vec.pop_back(); //delete value at last index
+    cout<<vec.front()<<"\n"; //print first value
+    cout<<vec.back()<<"\n";//print last value
+    cout<<vec.at(2)<<"\n";//index value
+    return 0;
+}
+
